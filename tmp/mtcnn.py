@@ -1,7 +1,5 @@
 # MIT License
 # 
-# Copyright (c) 2016 David Sandberg
-# 
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
 # in the Software without restriction, including without limitation the rights
@@ -53,7 +51,7 @@ minsize = 20 # minimum size of face
 threshold = [ 0.6, 0.7, 0.7 ]  # three steps's threshold
 factor = 0.709 # scale factor
 
-source_path = '/home/david/datasets/casia/CASIA-maxpy-clean/0000045/002.jpg'
+source_path = '/home/dream/datasets/casia/CASIA-maxpy-clean/0000045/002.jpg'
 img = misc.imread(source_path)
 
 bounding_boxes, points = align.detect_face.detect_face(img, minsize, pnet_fun, rnet_fun, onet_fun, threshold, factor)

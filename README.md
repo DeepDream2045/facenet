@@ -1,7 +1,4 @@
-# Face Recognition using Tensorflow [![Build Status][travis-image]][travis]
-
-[travis-image]: http://travis-ci.org/davidsandberg/facenet.svg?branch=master
-[travis]: http://travis-ci.org/davidsandberg/facenet
+# Face Recognition using Tensorflow
 
 This is a TensorFlow implementation of the face recognizer described in the paper
 ["FaceNet: A Unified Embedding for Face Recognition and Clustering"](http://arxiv.org/abs/1503.03832). The project also uses ideas from the paper ["Deep Face Recognition"](http://www.robots.ox.ac.uk/~vgg/publications/2015/Parkhi15/parkhi15.pdf) from the [Visual Geometry Group](http://www.robots.ox.ac.uk/~vgg/) at Oxford.

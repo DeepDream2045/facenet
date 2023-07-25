@@ -29,8 +29,8 @@ def main(args):
 def parse_arguments(argv):
     parser = argparse.ArgumentParser()
     
-    parser.add_argument('map_file_name', type=str, help='Name of the text file that contains the directory to class name mappings.')
-    parser.add_argument('dataset_path', type=str, help='Path to the dataset directory.')
+    parser.add_argument('--map_file_name', type=str, help='Name of the text file that contains the directory to class name mappings.')
+    parser.add_argument('--dataset_path', type=str, help='Path to the dataset directory.')
     return parser.parse_args(argv)
 
 if __name__ == '__main__':

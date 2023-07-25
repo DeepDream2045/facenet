@@ -6,8 +6,8 @@ import numpy as np
 
 def main():
     image_size = 96
-    old_dataset = '/home/david/datasets/facescrub/fs_aligned_new_oean/'
-    new_dataset = '/home/david/datasets/facescrub/facescrub_110_96/'
+    old_dataset = '/home/dream/datasets/facescrub/fs_aligned_new_oean/'
+    new_dataset = '/home/dream/datasets/facescrub/facescrub_110_96/'
     eq = 0
     num = 0
     l = []

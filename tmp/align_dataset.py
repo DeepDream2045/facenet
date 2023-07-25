@@ -2,8 +2,6 @@
 
 # MIT License
 # 
-# Copyright (c) 2016 David Sandberg
-# 
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
 # in the Software without restriction, including without limitation the rights
@@ -40,11 +38,13 @@ def main(args):
     output_dir = os.path.expanduser(args.output_dir)
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
+
     # Store some git revision info in a text file in the log directory
     src_path,_ = os.path.split(os.path.realpath(__file__))
     facenet.store_revision_info(src_path, output_dir, ' '.join(sys.argv))
     dataset = facenet.get_dataset(args.input_dir)
     random.shuffle(dataset)
+    
     # Scale the image such that the face fills the frame when cropped to crop_size
     scale = float(args.face_size) / args.image_size
     nrof_images_total = 0
@@ -117,8 +117,8 @@ def main(args):
 def parse_arguments(argv):
     parser = argparse.ArgumentParser()
     
-    parser.add_argument('input_dir', type=str, help='Directory with unaligned images.')
-    parser.add_argument('output_dir', type=str, help='Directory with aligned face thumbnails.')
+    parser.add_argument('--input_dir', type=str, help='Directory with unaligned images.')
+    parser.add_argument('--output_dir', type=str, help='Directory with aligned face thumbnails.')
     parser.add_argument('--dlib_face_predictor', type=str,
         help='File containing the dlib face predictor.', default='../data/shape_predictor_68_face_landmarks.dat')
     parser.add_argument('--image_size', type=int,

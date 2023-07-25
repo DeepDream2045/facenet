@@ -1,9 +1,6 @@
 """Decode the MsCelebV1 dataset in TSV (tab separated values) format downloaded from
 https://www.microsoft.com/en-us/research/project/ms-celeb-1m-challenge-recognizing-one-million-celebrities-real-world/
 """
-# MIT License
-# 
-# Copyright (c) 2016 David Sandberg
 # 
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
